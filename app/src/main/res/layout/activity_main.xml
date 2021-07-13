@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Film Kategorisini Seçin"
+            android:layout_marginBottom="5dp">
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner">
+        </Spinner>
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_height="wrap_content">
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Yükle"
+                android:id="@+id/uploads_video_btn"
+
+
+                ></Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:text="Video Seçilmedi"
+                android:id="@+id/textvideoselected"
+                >
+            </TextView>
+         </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Film açıklaması yazınız."
+            android:layout_marginTop="10dp"
+            android:id="@+id/movies_description"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Filmin IMDB Puanını giriniz.."
+            android:layout_marginTop="10dp"
+            android:id="@+id/movies_imdb"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Filmin yönetmenini yazınız.."
+            android:layout_marginTop="10dp"
+            android:id="@+id/movies_yonetmen"
+            >
+
+        </EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Filmin oyuncularını yazınız.."
+            android:layout_marginTop="10dp"
+            android:id="@+id/movies_oyuncu"
+            >
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonUpload"
+
+            android:textStyle="bold"
+            android:text="Yükle"
+            ></Button>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:textColor="@color/black"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/hakkimizda"
+        android:layout_width="50dp"
+        android:src="@drawable/beyazlogo"
+        android:background="@null"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="350dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentEnd="true"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="FİLMOLOG"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:id="@+id/textview"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/btnFilmEkle"
+        android:layout_width="50dp"
+        android:src="@drawable/add"
+        android:background="@null"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentEnd="true"
+        android:layout_height="50dp"
+        />
+
+
+</RelativeLayout>

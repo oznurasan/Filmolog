@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Filmolog</string>
+
+    <string-array name="Kategoriler">
+        <item>Aksiyon</item>
+        <item>Komedi</item>
+        <item>Romantik</item>
+        <item>Korku</item>
+        <item>Macera</item>
+        <item>Bilim Kurgu</item>
+        <item>Fantastik</item>
+        <item>Gerilim</item>
+        <item>Belgesel</item>
+        <item>Biyografi</item>
+        <item>Polisiye</item>
+        <item>Psikolojik</item>
+
+    </string-array>
+
+</resources>

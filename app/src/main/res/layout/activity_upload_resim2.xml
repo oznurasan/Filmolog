@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadResimActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Film Türünü Seçiniz"
+            android:textColor="@color/black"
+            android:layout_marginBottom="5dp">
+
+        </TextView>
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioNotype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Türü Yok">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radiolatestMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En Son Cikan Filmler">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radiobestpopularMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En Populer Filmler">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioSlideMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide">
+
+            </RadioButton>
+
+    </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resim Yükle"
+                android:onClick="showimagechooser"
+                >
+
+            </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resim seçili değil"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:id="@+id/textNothumbnailselected">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yükle"
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonupload"
+            android:textStyle="bold"
+            android:onClick="uploadfiletofirebase"
+            >
+
+
+        </Button>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="335dp"
+            android:layout_height="478dp"
+            android:layout_marginTop="10dp">
+
+        </ImageView>
+
+
+    </LinearLayout>
+</RelativeLayout>
